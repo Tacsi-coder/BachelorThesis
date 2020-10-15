@@ -1,9 +1,9 @@
-package com.example.shreyanshsingh.remindme;
+package com.example.adamtacsik.MyReminder;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
+
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.CompoundButton;
@@ -23,7 +23,7 @@ public class SwitchActivity extends AppCompatActivity implements CompoundButton.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.reminderdetail);
+        setContentView(R.layout.reminder_set);
 
 
         mySwitch = (SwitchCompat) findViewById(R.id.switch2);
@@ -43,9 +43,9 @@ public class SwitchActivity extends AppCompatActivity implements CompoundButton.
             // Apply the adapter to the spinner
             dropdown.setAdapter(staticAdapter);
         } else {
-            TextView every = (TextView) findViewById(R.id.textView3);
-            Spinner everytime =(Spinner) findViewById(R.id.spinner);
-            EditText time =(EditText) findViewById(R.id.everytime);
+            TextView every = (TextView) findViewById(R.id.occurEvery);
+            Spinner everytime = (Spinner) findViewById(R.id.spinner);
+            EditText time = (EditText) findViewById(R.id.everytime);
             every.setVisibility(View.INVISIBLE);
             everytime.setVisibility(View.INVISIBLE);
             time.setVisibility(View.INVISIBLE);
