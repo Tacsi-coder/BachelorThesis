@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:ems="10"
+        android:hint="Your Reminder"
+        android:inputType="textCapSentences" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="8dp"
+        android:showText="true"
+        android:switchMinWidth="56dp"
+        android:switchPadding="30sp"
+        android:text="Repeat"
+        android:textOff="No"
+        android:textOn="Yes"
+        android:textSize="25sp"
+        android:thumbTextPadding="5sp" />
+
+    <TextView
+        android:id="@+id/occurEvery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch2"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="40dp"
+        android:text="Occur Every"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/everytime"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch2"
+        android:layout_alignBaseline="@+id/occurEvery"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="37dp"
+        android:layout_toRightOf="@+id/occurEvery"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_below="@+id/switch2"
+        android:layout_alignBottom="@+id/occurEvery"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="31dp"
+        android:layout_toEndOf="@+id/everytime"
+        android:layout_toRightOf="@+id/everytime"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/stayFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/everytime"
+        android:layout_marginTop="41dp"
+        android:paddingLeft="16dp"
+        android:text="Stay for"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/stayForTime"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/stayFor"
+        android:layout_alignBottom="@+id/stayFor"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/stayFor"
+        android:layout_toRightOf="@+id/stayFor"
+        android:ems="10"
+        android:hint="Time"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/stayFor"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/stayForTime" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stayForTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:onClick="setReminder"
+        android:text="Set Reminder" />
+
+
+</RelativeLayout>
