@@ -3,8 +3,9 @@ Documentation - RemindMe
 
 ## Author- Adam Tacsik
 This app is servicing for my BachelorThehis in a way to do certain tasks at a certain time. Basically most of people put on some weight during the time of the quarantine. Some people lose their job and some of them forced to do work at HomeOffice. This lead many people staying at home, furthermore the time spent with motion significantly has been decreased. As the lifestyle of people changed to some extent, as the working hours of a day has been increased. The point of this app to force the HomeOfficers to do some motion task, thus, they can interrupt their work, this way they can do some exercises between certain period of times (walking etc..)
-
+<p align="center">
 <img src="Images/Icon.jpg" width="100" heigth="100">
+</p>
 
 <p align="center">
 <img src="Images/MainMenu.jpg" width="250" heigth="514">
